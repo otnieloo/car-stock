@@ -12,15 +12,15 @@
                         </tr>
                         <tr>
                             <th>Mobil paling banyak terjual</th>
-                            <td>Avanza</td>
+                            <td>{{$car->name}}</td>
                         </tr>
                         <tr>
                             <th>Penjualan hari ini</th>
-                            <td>120</td>
+                            <td>{{$sales}} unit ({{$diff_sales}}%)</td>
                         </tr>
                         <tr>
                             <th>Total penjualan hari ini</th>
-                            <td>Rp. 100.000.000</td>
+                            <td>Rp. {{$total_sales}} ({{$diff_total_sales}}%)</td>
                         </tr>
                     </table>
                     <table class="table">
@@ -30,15 +30,15 @@
                         </tr>
                         <tr>
                             <th>Mobil paling banyak terjual</th>
-                            <td>Avanza</td>
+                            <td>{{$seven_days_car->name}}</td>
                         </tr>
                         <tr>
                             <th>Penjualan 7 hari terakhir</th>
-                            <td>120</td>
+                            <td>{{$seven_days_sales}}</td>
                         </tr>
                         <tr>
                             <th>Total penjualan 7 hari terakhir</th>
-                            <td>Rp. 100.000.000</td>
+                            <td>{{$seven_days_total_sales}}</td>
                         </tr>
                     </table>
                 </div>
